@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!-- ctlr + /   comments -->
+    <h1>tekst dokumentu</h1> 
+
+    <!-- elementy blokowe = display: block -->
+    <div>to jest div</div>
+    <h2>nagłowek</h2>
+    <section>to jest section</section>
+    <p>to jest paragraf</p>
+
+    <!-- elementy liniowe -->
+    <span>to jest span</span>
+    <a href="#"></a>
+    <strong>to jest wyróznienie</strong>
+
+    <!-- odnosniki - znacznik a -->
+    <a href="https://google.com">link do google</a>
+    <a href="#about">przekierowanie do sekcji id about</a>
+    <!-- otwieranie w nowym oknie -->
+    <a href="https://google.com" terget="_blank">link do google</a> 
+    <!-- wyslij maila do: -->
+    <a href="mailto:krakow@akademia108.pl">wyslij mail do krakow akademia 108</a>
+
+    <!-- tabele - wykorzystywane odp na mail podsumowanie zamowienia np -->
+    <table>
+        <thead>
+            <tr>
+                <th>nazwa</th>
+                <th>ilosc</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>kawa</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>herbata</td>
+                <td>5</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>suma</td>
+                <td>7</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <!-- formularze -->
+    <!-- action - odwołanie do skryptu back endowego ktory ma odebrac i obsluzyc formularz -->
+    <form action="form.php" method="post">
+        <!-- name=username - segregowanie danych w php, value to jest to co wpisujemy w pole -->
+        <!-- placeholder - tekst ktory pojawia sie w okienku i jak klikniemy to znika -->
+        <input type="text" name="username" placeholder="wpisz nazwe uzytkowanika"><br>
+        <!-- imput email -->
+        <!-- disabled pole niekatywne -->
+        <input type="email" name="emailadress" disabled><br>
+
+        <!-- imput number -->
+        <label for="id-imput-quantity">ilość zamówionych rzeczy</label>
+        <input type="number" id="id-imput-quantity" name="quantity" min="1" max="10"><br>
+
+        <!-- przesyla wartosc do back endu warość albo 0 albo 1 - prawda / fałsz -->
+        <!-- atrybut required - wymagane -->
+        <input type="checkbox" name="agreement" required>wyrażam zgode na przetwarzanie danych osobowych.... <br>
+        <!-- radio button sluza do wykluczajcych sie tresci np wybierz kobieta/mezczyzna -->
+        <!-- atrybut name przy radio buttonach grupuje je i dziala poprawnie czyli sie wykluczaja -->
+        <!-- dzieki lable zwieksza nam sie zasieg inputu - nie musimy klikac nasamego boxa -->
+        <label><input type="radio" name="gender" value="k">kobieta</label> <br>
+        <label></label><input type="radio"name="gender" value="m">mezczyzna</label> <br>
+        <label></label><input type="radio"name="gender" value="i">inna</label> <br>
+        <!-- wielokrotny wybór -->
+        <select name="city">
+            <option value="kraków">kraków w polsce</option>
+            <option value="ny">nowy jork w usa</option>
+            <option value="berlin">berlin w niemczech</option>
+        </select>
+        <!-- maxlenght max liczba znaków -->
+        <textarea name="message" maxlength="500"></textarea>
+        <!-- imput nie zadziala poza formularz -->
+        <input type="submit" value="wyslij imput">
+        <!-- button zadziala poza formularzem -->
+        <button>wyslij button</button>
+    </form>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div id="about">to jest koneter o id about</div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+</body>
+</html>
