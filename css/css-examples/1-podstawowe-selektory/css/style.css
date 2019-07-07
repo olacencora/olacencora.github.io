@@ -1,0 +1,48 @@
+/* shift + alt + a */
+/* sekeltor zanacznika */
+li
+{
+    color: rgb(35, 13, 114);
+}
+/* selektor id */
+#first-list
+{
+    background-color: rgb(140, 119, 197);
+}
+/* selektor klasy */
+.first-item
+{
+    font-size: 20px;
+}
+/* a - bezposredni potomek section */
+section > a
+{
+    background-color: blueviolet;
+}
+/* wszystkie a zagniezdzone w section */
+section a
+{
+    color: brown;
+}
+/* stylizuje li bedace bezposrednim rodzenstwem li.middle-item */
+.middle-item + li
+{
+    background-color: aquamarine;
+}
+/* stylizuje wszytskie li bedace rodzenstwem po li.middle-item  */
+.middle-item ~ li
+{
+    color: #00ff15;
+}
+/* selektor uniwersalny */
+*
+{
+    border: 1px solid rgb(156, 189, 13);
+    box-sizing: border-box;
+}
+/* selektory łączone - i klasa taka i inna */
+.middle-item.item
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+}
