@@ -1,0 +1,67 @@
+form
+{
+    background-color: #213b50;
+    color: #ffffff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 600px;
+    padding: 30px;
+}
+input
+{
+    background-color: #2b4a64;
+    border: 0;
+    width: 300px;
+    height: 30px;
+}
+input:focus
+{
+    background-color: #4e708c;
+    outline-color: #ffffff;
+    color: #ffffff;
+    
+}
+textarea
+{
+    background-color: #2b4a64;
+    width: 300px;
+    border: 0;
+}
+textarea:focus
+{
+    background-color: #4e708c;
+    outline-color: #ffffff;
+    color: #ffffff;
+}
+label
+{
+    display: block;
+}
+input[type="submit"]
+{
+    background-color: rgb(56, 221, 166);
+    border: 0;
+    text-transform: uppercase;
+    text-align: center;
+    color: #ffffff;
+    padding: 10px;
+    width: 60px;
+    margin-top: 20px;
+}
+option,select
+{
+    background-color: #2b4a64;
+}
+option:focus
+{
+    background-color: #4e708c;
+    color: #ffffff;
+}
+label[for="agreement"],[for="male"],[for="female"]
+{
+    display: inline;
+}
+input[type="radio"],[name="agreement"]
+{
+    width: 20px;
+    height: 20px;
+}

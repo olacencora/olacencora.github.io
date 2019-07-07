@@ -1,0 +1,36 @@
+nav
+{
+    background-color: #b18787;
+}
+/* kazdy element ktory ma atrybut title */
+[title]
+{
+    color: blue;
+}
+/* element ktory ma atrybut tile o wartosci "Main page"*/
+[title="Main page"]
+{
+    font-size: 30px;
+}
+/* element ktory w wartosci atrybutu zawiera slowo .. */
+[title~="Cointtainer"]
+{
+    background-color: #b18787;
+}
+/* zawiera ciag znaków */
+[title*="tion"]
+{
+    background-color: yellow;
+}
+[title=^="More"]
+{
+    background: yellow;
+}
+[title=$="skills"]
+{
+    background: green;
+}
+li
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

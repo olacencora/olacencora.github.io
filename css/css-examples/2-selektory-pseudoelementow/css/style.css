@@ -1,0 +1,23 @@
+body
+{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+/* pseudo element - taki ktorego nie ma w html */
+.main-title::before
+{
+    content: '<';
+}
+.main-title::after
+{
+    content: '%';
+    color:
+}
+.main-title::before
+{
+    content: '';
+    color: green;
+    height: 30px;
+    width: 30px;
+    border-top: 2px solid red;
+    border-left: 2px solid red;
+}

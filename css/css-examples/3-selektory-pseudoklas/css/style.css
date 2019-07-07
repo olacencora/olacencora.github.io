@@ -1,0 +1,47 @@
+body
+{
+    background-color: bisque;
+}
+button
+{
+    background-color: rgb(86, 86, 150);
+    color: white;
+    padding: 30px;
+    border: 0;
+    cursor: pointer;
+    font-size: 30px;
+    transition: all 0.5s;
+}
+button:hover
+{
+    background-color: rgb(55, 55, 128);
+    padding: 60px;
+}
+/* selektor focus */
+input:focus
+{
+    background-color: yellow;
+    outline: 0; /* wylaczennie podswietlania bordera */
+}
+/* selektory relacji */
+li:last-child
+{
+    background-color: #333555;
+}
+li:first-child
+{
+    background-color: #333555;
+}
+li:nth-of-type(5)
+{
+    color: red;
+}
+/* co trzeci + offset - bedzie pokolorowany 1 /4 /7... */
+li:nth-of-type(3n + 1)
+{
+    color: greenyellow;
+}
+li:nth-of-type(even)
+{
+    font-size: 30px;
+}
