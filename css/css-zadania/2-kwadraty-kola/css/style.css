@@ -1,0 +1,113 @@
+#cointainer
+{
+    background-color: rosybrown;
+    height: 605px;
+    width: 605px;
+    position: relative;
+}
+/* zawiera ciag znaków */
+[id*="kwadrat"]
+{
+    height: 200px;
+    width: 200px;
+    position: absolute; /* rodzic relative dziecko absolute */
+    border: 1px solid #fff;
+    background-color: antiquewhite;
+}
+[id*="kolo"]
+{
+    height: 100px;
+    width: 100px;
+    position: absolute; /* rodzic relative dziecko absolute */
+    border: 1px solid #000;
+    border-radius: 50px;
+    background-color: aqua;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%)
+}
+#kwadrat1
+{
+    background-color: rgb(235, 0, 0);
+}
+#kolo1
+{
+    background-color: rgb(197, 21, 144);
+}
+#kwadrat2
+{
+    left: 33.33%;
+    background-color: blue;
+}
+#kolo2
+{
+    background-color: grey;
+}
+#kwadrat3
+{
+    right: 0%;
+    background-color: green;
+}
+#kolo3
+{
+    background-color: rgb(100, 12, 88);
+}
+#kwadrat4
+{
+    top: 33.33%;
+    background-color: yellow;
+}
+#kolo4
+{
+    background-color: rgb(36, 87, 21);
+}
+#kwadrat5
+{
+    top: 33.33%;
+    left: 33.33%;
+    background-color: rgb(0, 0, 0);
+}
+#kolo5
+{
+    background-color: rgb(163, 19, 19);
+}
+#kwadrat6
+{
+    top: 33.33%;
+    right: 0%;
+    background-color: rgb(221, 131, 13);
+}
+#kolo6
+{
+    background-color: rgb(66, 52, 192);
+}
+#kwadrat7
+{
+    bottom: 0;
+    left: 0%;
+    background-color: rgb(163, 0, 196);
+}
+#kolo7
+{
+    background-color: rgb(250, 142, 0);
+}
+#kwadrat8
+{
+    bottom: 0;
+    left: 33.33%;
+    background-color: rgb(116, 116, 116);
+}
+#kolo8
+{
+    background-color: rgb(211, 214, 4);
+}
+#kwadrat9
+{
+    bottom: 0;
+    left: 66.66%;
+    background-color: rgb(212, 0, 149);
+}
+#kolo9
+{
+    background-color: rgb(0, 0, 0);
+}
