@@ -34,3 +34,9 @@ li
 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+/* wyśrodkowanie dziecka w boxie rodzica .. */
+/*
+left: 50%;
+top: 50%;
+transform: translate(-50%, -50%)
+*/
