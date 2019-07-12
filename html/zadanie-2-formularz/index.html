@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Warsztaty - HTML5 w praktyce</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <h1>a simple form</h1>
+  <form action="https://formspree.io/olacencora@gmail.com" method="POST">
+    <fieldset>Customer Info:
+
+      <label for="name">Name:
+        <input type="text" name="name" id="name" placeholder="Enter your name" required autofocus>
+      </label>
+
+      <label for="tel">Telephone:
+        <input type="tel" name="phone" id="phone" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{4}" required placeholder="Pattern: 1-234-567-8910">
+      </label>
+
+      <label for="email">Email address:
+        <input type="email" name="email" id="email" placeholder="Enter your e-mail address">
+      </label>
+
+    </fieldset>
+
+    <fieldset>Books:
+      <select name="books" id="books">
+          <option value="krew_elfow">Krew Elfów</option>
+          <option value="sezon_burz">Sezon Burz</option>
+          <option value="czas_pogardy">Czas Pogardy</option>
+          <option value="chrzest_ognia">Chrzest Ognia</option>
+          <option value="ostatnie_zyczenie">Ostatnie Życzenie</option>
+      </select>
+
+      <label for="number">Quantity (max 5)
+        <input type="number" name="quantity" id="quantity" min="1" max="5">
+      </label>
+
+    </fieldset>
+  <input type="submit" id="submit">
+</form>
+</body>
+</html>

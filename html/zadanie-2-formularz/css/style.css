@@ -1,0 +1,41 @@
+body:
+{
+    font-family: 'Montserrat', sans-serif;
+}
+h1
+{
+    text-transform: capitalize;
+}
+
+form
+{
+    color: rgb(211, 211, 211);
+    padding: 20px;
+    font-size: 22px;
+    width: 800px;
+    background-image: url("img/witcher.jpg"); /*nie dziala ?!*/
+    background-color: #cccccc;
+  background-image: radial-gradient(rgb(3, 3, 3), rgb(95, 95, 95));
+    
+}
+input,select
+{
+    width: 400px;
+    height: 25px;
+    margin: 10px 0;
+    display: block;
+
+}
+fieldset
+{
+    
+    margin-bottom: 10px;
+}
+#submit
+{
+    background-color: #694b81;
+    height: 50px;
+    width: 100px;
+    font-weight: 500;
+    color: #fff;
+}
