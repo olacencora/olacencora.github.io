@@ -1,0 +1,25 @@
+*
+{
+  font-family: 'Roboto', sans-serif;
+  color: #007bff;
+  background-color: #f2f1ed;
+}
+header
+{
+  background-image: url(../img/header.jpg);
+  padding:
+  background-size: 100%;
+}
+h1
+{
+  background-color: rgba(173, 216, 230, 0);
+}
+h2
+{
+  background-color: rgba(173, 216, 230, 0);
+}
+.button1
+{
+  background-color: rgba(173, 216, 230, 0);
+  border: 
+}

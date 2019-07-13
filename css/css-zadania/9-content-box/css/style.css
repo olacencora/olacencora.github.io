@@ -1,0 +1,22 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-size: 2px;
+}
+.box
+{
+    width: 100px;
+    height: 100px;
+    border: 2px solid red;
+    margin: 10px auto;
+    padding: 10px;
+}
+.box1
+{
+    box-sizing: border-box; /*upycha padding i border do srodka*/
+}
+.box1
+{
+    box-sizing: content-box;
+}

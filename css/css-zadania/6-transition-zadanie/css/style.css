@@ -1,0 +1,32 @@
+[class*="box"]
+{
+    width: 150px;
+    height: 150px;
+    margin: 10px auto;
+    transition: .5s all;
+}
+.box1
+{
+    background-color: blueviolet;
+}
+.box1:hover
+{
+    width: 300px;
+}
+.box2
+{
+    background-color: rgb(106, 51, 158);
+}
+.box2:hover
+{
+    height: 300px;
+}
+.box3
+{
+    background-color: rgb(56, 35, 77);
+}
+.box3:hover
+{
+    height: 300px;
+    width: 300px;
+}
