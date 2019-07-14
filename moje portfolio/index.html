@@ -5,28 +5,116 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 </head>
 <body>
-    <header>
-        <section>
-            <h1>front edn developer</h1>
-            <h2>HTML CSS JavaScript</h2>
-            <div class="box1">
-                <button class="button1">dowiedz się więcej</button>
-            </div>
-        </section>
+    <header class="main-header">
+        <div class="main-header-content">
+            <h1>front end developer</h1>
+            <hr>
+            <h2>HTML <span>&bull;</span> CSS <span>&bull;</span> JavaScript</h2>
+            <a class="btn" href="#" target="_blank">dowiedz się więcej</a>
+        </div>
     </header>
-    <nav>
-        <ol>
-            <li class="nav-item"></li>
-            <li class="nav-item"></li>
-            <li class="nav-item"></li>
-        </ol>
+    <nav class="main-nav">
+            <label for="drop-nav">menu</label>
+            <input type="checkbox" id="drop-nav">
+        <ul class="nav-menu">
+            <li class="nav-item"><a href="#" target="_blank">o mnie</a></li>
+            <li class="nav-item"><a href="#" target="_blank">portfolio</a></li>
+            <li class="nav-item"><a href="#" target="_blank">kontakt</a></li>
+        </ul>
     </nav>
-
-    
+    <section class="about-me-section">
+        <h3>o mnie</h3>
+        <hr>
+        <img class="me-photo" src="img/about.jpg" alt="me-photo">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, error! Esse suscipit nihil harum optio mollitia blanditiis aut? Hic ducimus modi rerum quasi at aliquam ipsum quos fugiat quaerat eum.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas illum mollitia nihil eveniet tempore doloribus quisquam magnam sint culpa quaerat labore amet error minima dolor at, veniam voluptates consequatur enim?
+        </p>
+        <a class="btn" href="#" target="_blank">moje portfolio</a>
+    </section>
+    <section class="portfolio-section">
+        <h3>portfolio</h3>
+            <div class="portfolio-wrapper">
+            <a class="portfolio-item" href="#">
+                <img class="img-gallery-item" src="img/portfolio/photo-1.jpg" alt="photo1">
+                <h4>projekt</h4>
+            </a>
+            <a class="portfolio-item" href="#">
+                <img class="img-gallery-item" src="img/portfolio/photo-2.jpg" alt="photo2">
+                <h4>projekt</h4>
+            </a>
+            <a class="portfolio-item" href="#">
+                <img class="img-gallery-item" src="img/portfolio/photo-3.jpg" alt="photo3">
+                <h4>projekt</h4>
+            </a>
+            <a class="portfolio-item" href="#">
+                <img class="img-gallery-item" src="img/portfolio/photo-4.jpg" alt="photo4">
+                <h4>projekt</h4>
+            </a>
+            <a class="portfolio-item" href="#">
+                <img class="img-gallery-item" src="img/portfolio/photo-5.jpg" alt="photo5">
+                <h4>projekt</h4>
+            </a>
+            <a class="portfolio-item" href="#">
+                <img class="img-gallery-item" src="img/portfolio/photo-6.jpg" alt="photo6">
+                <h4>projekt</h4>
+            </a>
+            <a class="portfolio-item" href="#">
+                <img class="img-gallery-item" src="img/portfolio/photo-7.jpg" alt="photo7">
+                <h4>projekt</h4>
+            </a>
+            <a class="portfolio-item" href="#">
+                <img class="img-gallery-item" src="img/portfolio/photo-8.jpg" alt="photo8">
+                <h4>projekt</h4>
+            </a>
+            <a class="portfolio-item" href="#">
+                <img class="img-gallery-item" src="img/portfolio/photo-9.jpg" alt="photo9">
+                <h4>projekt</h4>
+            </a>
+            <a class="portfolio-item" href="#">
+                <img class="img-gallery-item" src="img/portfolio/photo-10.jpg" alt="photo10">
+                <h4>projekt</h4>
+            </a>
+            <a class="portfolio-item" href="#">
+                <img class="img-gallery-item" src="img/portfolio/photo-11.jpg" alt="photo11">
+                <h4>projekt</h4>
+            </a>
+            <a class="portfolio-item" href="#">
+                <img class="img-gallery-item" src="img/portfolio/photo-12.jpg" alt="photo12">
+                <h4>projekt</h4>
+            </a>
+        </div>
+    </section>
+    <section class="contact">
+        <h3>kontakt</h3><hr>
+            <form action="https://formspree.io/olacencora@gmail.com" method="POST">
+                <input type="text" class="input-text" name="name" id="name" placeholder="imie" required autofocus>
+                <input type="email" class="input-text" name="emial" id="emial" placeholder="email" required>
+                <textarea name="message" id="message" placeholder="wiadomość"></textarea>
+                <input type="submit" class="btn">
+             </form>
+    </section>
+    <div class="social-links">
+        <a href="#" class="social-icon">
+            <i class="fab fa-facebook"></i>
+        </a>
+        <a href="#" class="social-icon">
+            <i class="fab fa-twitter"></i>
+        </a>
+        <a href="#" class="social-icon">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="#" class="social-icon">
+            <i class="fab fa-youtube"></i>
+        </a>
+    </div>
+    <footer>Copyrights</footer>
+    <script> </script>
 </body>
 </html>

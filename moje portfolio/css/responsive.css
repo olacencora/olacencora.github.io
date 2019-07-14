@@ -1,0 +1,54 @@
+@media (max-width:980px)
+{
+    .portfolio-section .portfolio-wrapper .portfolio-item
+        {
+        flex-basis: 50%; /*szerokosc zdjec*/
+        }
+    form
+    {
+        width: 80%
+    }
+    }
+
+    @media (max-width:680px)
+    {
+        .input-text
+        {
+            flex-basis: 100%;
+        }
+        [class*="fab"]
+        {
+            padding: 0 0.5em;
+    }
+/* navigation */
+
+@media (max-width:480px)
+{
+    ul
+    {
+        display: none;
+    }
+    label
+    {
+        display: block;
+        padding: 10px 15px;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 1.5em;
+        text-align: right;
+    }
+    /* stylizujemy ul w pozycji checked inputa o klasie drop-nav */
+    #drop-nav:checked + ul 
+    {
+        display: block;
+    }
+    .main-nav .nav-menu .nav-item
+    {
+        display: block;
+        text-align: right;
+    }
+    .about-me-section
+    {
+        padding: 3em 2em;
+    } 
+}
