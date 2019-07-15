@@ -1,0 +1,54 @@
+@media (max-width: 992px)
+{
+    .aside-left
+    {
+        flex-basis: 100%;
+        order: 4; 
+    }
+    .centre
+    {
+        flex-grow: 2;
+    }
+    .aside-right
+    {
+        flex-grow: 1;
+    }
+    .footer
+    {
+        order: 5;
+    }
+}
+@media (max-width: 768px)
+{
+    .main-container
+    {
+        flex-direction: column;
+    }
+    .main-container > *
+    {
+        flex-basis: 100%;
+    }
+    header
+    {
+        order: 1;
+    }
+    .aside-left
+    {
+        order: 3;
+        flex-basis: 10em;
+    }
+    .centre
+    {
+        order: 2;
+    }
+    .aside-right
+    {
+        order: 4;
+        height: 3em;
+        flex-basis: 10em;
+    }
+    .footer
+    {
+        order: 5;
+    }
+}

@@ -1,0 +1,53 @@
+body
+{
+    font-size: 20px;
+    color: #fff;
+}
+header
+{
+    background-color: rgb(68, 116, 156);
+    width: 100%;
+    padding: 1em;
+    text-align: center;
+    text-transform: capitalize;
+}
+.main-container
+{
+    display: flex;
+    flex-direction: row;
+    padding: 1.5em;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+}
+.aside-left
+{
+    background-color: rgb(48, 48, 87);
+    flex-basis: 20%;
+    padding-top: 1em;
+    text-align: center;
+    
+}
+.centre
+{
+    background-color: rgb(20, 20, 65);
+    flex-basis: 60%;
+}
+.aside-right
+{
+    background-color: rgb(53, 53, 134);
+    flex-basis: 20%;
+    padding-top: 1em;
+    text-align: center;
+}
+.footer
+{
+    background-color: rgb(12, 12, 145);
+    width: 100%;
+    text-align: center;
+    padding: 1em;
+}
+.centre > p
+{
+    padding: 1em;
+}
