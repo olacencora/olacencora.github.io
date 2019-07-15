@@ -13,10 +13,7 @@ form
     padding: 20px;
     font-size: 22px;
     width: 800px;
-    background-image: url("img/witcher.jpg"); /*nie dziala ?!*/
-    background-color: #cccccc;
-  background-image: radial-gradient(rgb(3, 3, 3), rgb(95, 95, 95));
-    
+    background-image: url("../img/witcher.jpg");  
 }
 input,select
 {
@@ -38,4 +35,8 @@ fieldset
     width: 100px;
     font-weight: 500;
     color: #fff;
+}
+#email
+{
+    word-break: break-word;
 }
