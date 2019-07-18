@@ -109,4 +109,30 @@
     {
         opacity: 1;
     }
+}
+.box-love
+{
+    opacity: 0;
+    font-size: 70px;
+    color: red;
+    animation-name: box-love-appear; 
+    animation-duration: 1s; 
+    animation-iteration-count: 1; 
+    animation-delay: 5s;
+    -webkit-animation-fill-mode: forwards; /*stop animation after finish*/
+}
+@keyframes box-love-appear 
+{
+    0% /*startowy i ostateczny punkt*/
+    {
+        opacity: 0;
     }
+    1%
+    {
+        opacity: 1;
+    }
+    100%
+    {
+        opacity: 1;
+    }
+}
