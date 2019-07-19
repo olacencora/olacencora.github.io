@@ -1,0 +1,39 @@
+@media (max-width: 1170px)
+{
+    .main
+{
+    height: 70vh;
+    background-image: url("../obrazy/man-2.jpg");
+}
+.title
+{
+    top: 5%;
+    font-size: 1em;
+    right: 5%;
+    margin-right: 3%;
+}
+@media (max-width: 992px)
+{
+    .main
+    {
+        height: 50vh;
+        background-image: url("../obrazy/man-1.jpg");
+    }
+    .title
+    {
+        top: 105%;
+        width: 100%;
+        font-size: 1em;
+        right: 0;
+        margin-right: 0;
+        text-align: center;
+    }
+    h1
+    {
+        color: #000;
+    }
+    h2
+    {
+        color: #000;
+    }
+}

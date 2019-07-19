@@ -1,0 +1,30 @@
+
+button
+{
+    height: 40px;
+    width: 100px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    text-align: center;
+    background-color: rgb(177, 14, 14);
+    color: rgb(226, 43, 226);
+    display: block;
+    border: 3px solid rgb(90, 17, 17);
+    margin-top: 50px;
+    top: 100px;
+    left: auto;
+    animation-name: resize; /*nazwa własana naszej animacji*/
+    animation-duration: 1.5s; /*czas trawania animacji*/
+    animation-iteration-count: infinite; /*powtarzalność*/
+}
+@keyframes resize 
+{
+    0%,100% /*startowy i ostateczny punkt*/
+    {
+        transform: scale(1.5)
+    }
+    50%
+    {
+        transform: scale(1)
+    }
+}

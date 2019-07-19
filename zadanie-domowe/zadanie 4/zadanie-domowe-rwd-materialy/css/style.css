@@ -1,0 +1,25 @@
+body
+{
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    color: #fff;
+}
+.main
+{
+    height: 100vh;
+    max-width: 100vw;
+    background-image: url("../obrazy/man-1.jpg");
+    background-position: top;
+    background-size: cover;
+    position: relative;
+}
+.title
+{
+    position: absolute;
+    top: 50%;
+    font-size: 1.7em;
+    margin-left: 3%;
+}

@@ -1,0 +1,18 @@
+.box
+{
+    width: 200px;
+    height: 200px;
+    background-color: #3b7940;
+    margin: 0 auto;
+    transition: .5s all; /* mozna zapisac skrocony*/
+    transition-property: all; /* co ma działać*/
+    transition-duration: 1s; /* ila czasu ma trwac [s]*/
+    transition-timing-function: ease-in-out; /* sposób efektu przejścia - easu in-out : wolniej na poczatku i na końcu*/
+    transition-delay: 2s; /*opóźnienie startu*/
+}
+.box:hover
+{
+    background-color: #020a03;
+    width: 600px;
+
+}
