@@ -12,11 +12,11 @@ console.log(typeof (stringVar + numberVar)); /*calosc zostaje stringiem*/
 
 let bolVar = true;
 
-console.log(typeof bolVar);
+console.log(typeof bolVar); 
 
 let divMain = document.getElementById('main');
 
-function chcekDiv() {
+function chcekDiv() { /*wyszukiwanie po id w dokumencie*/
     if (divMain !== null) {
         console.log('Div istnieje');
     } else {

@@ -23,3 +23,20 @@ console.log(wynikGlobalnaZmienna);
         console.log(i);
     }
 })();
+
+/* no idea
+function cos(x) {
+    if (x===10) {
+        console.log(x)
+    } else {
+        let z = 0;
+        (function(){
+            let z = x
+            console.log(z);
+        })()
+        console.log(z);
+    }
+}
+*/
+
+

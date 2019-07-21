@@ -26,9 +26,9 @@ console.log(nameTable.length); /*sprawdzamy jaka jest dlugosc tablicy*/
 console.log(typeof nameTable.lenght) /*sprawdzamy typ danych*/
 
 nameTable.reverse();
-console.log(nameTable);  /*odwrócenie kolljenosci na zawsze*/
+console.log(nameTable);  /*odwrócenie koljenosci na zawsze*/
 
-let numberArray = [1,5,55,76,305,3,643,9999,500, 'jacek'];
+let numberArray = [1,5,55,76,305,3,643,9999,500];
 
 sortedArray = numberArray.sort((a,b) => a - b); /*gdy sortujemy talice od najwiekszej do najmneijszej zawsze dajemy ten zapis*/
 
