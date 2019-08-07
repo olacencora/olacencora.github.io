@@ -160,3 +160,116 @@
         opacity: 1;
     }
 }
+
+
+
+
+
+
+
+
+
+
+////////////////////
+
+@keyframes fadeIn {
+    0%{
+      visibility: visible;
+    }
+  }
+  
+  body {
+    color: white;
+    background-color: black; 
+  }
+  
+  
+  .odliczanie {
+      position: relative;
+      width:50%;
+      height:50vh;
+      text-align: center;
+      margin-top:25%;
+      margin-left:25%;
+      font-size: 8em;
+  }
+  
+  .odliczanie .odliczanie-nr {
+      position: absolute;
+      left:0;
+      right:0;
+      visibility: hidden;
+      animation: 1s fadeIn;
+      animation-fill-mode: forwards;
+  }
+  
+  #ten {
+    animation-delay: 1s;
+  }
+  
+  #nine {
+    animation-delay: 2s;
+  }
+  
+  #eight {
+    animation-delay: 3s;
+  }
+  
+  #seven {
+    animation-delay: 4s;
+  }
+  
+  #six {
+    animation-delay: 5s;
+  }
+  
+  #five {
+    animation-delay: 6s;
+  }
+  
+  #four {
+    animation-delay: 7s;
+  }
+  
+  #three {
+    animation-delay: 8s;
+  }
+  
+  #two {
+    animation-delay: 9s;
+  }
+  
+  #one {
+    animation-delay: 10s;
+  }
+  
+  #zero {
+    animation-delay: 11s;
+  }
+  
+  #text {
+    animation: 10s fadeIn;
+    animation-delay: 12s;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    font-size: 15vh;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  

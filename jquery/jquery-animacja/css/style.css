@@ -1,0 +1,7 @@
+.box-red
+{
+    background-color: rgb(155, 18, 18);
+    width: 200px;
+    height: 200px;
+    position: relative;
+}
