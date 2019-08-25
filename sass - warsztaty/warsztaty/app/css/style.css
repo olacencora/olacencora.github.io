@@ -1,0 +1,29 @@
+body {
+  background-color: #6343bb; }
+
+h1 {
+  color: #b7aadb; }
+
+nav {
+  background-color: #fff; }
+  nav ul {
+    margin-left: 200px; }
+    nav ul li {
+      color: chocolate; }
+      nav ul li a {
+        color: red; }
+
+button {
+  padding: 20px;
+  background-color: #706c7a;
+  border-radius: 5px; }
+
+.btn-primary {
+  padding: 20px;
+  background-color: #706c7a;
+  border-radius: 5px;
+  color: green; }
+
+p {
+  color: #b64a80;
+  font-size: 20px; }

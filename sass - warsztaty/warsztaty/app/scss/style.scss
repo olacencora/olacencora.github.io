@@ -1,0 +1,48 @@
+@import 'variables';
+@import 'mixins';
+
+
+body
+{
+    background-color: $base-color;
+}
+
+h1
+{
+    color: $text-color;
+}
+
+nav
+{
+    background-color: #fff;
+
+    ul
+    {
+        margin-left: 200px;
+
+        li
+        {
+            color: chocolate;
+
+            a
+            {
+                color: red;
+            }
+        }
+    }
+}
+button
+{
+    @include button;
+}
+
+.btn-primary
+{
+    @include button;
+    color: green;
+}
+
+p
+{
+    @include paragraph(rgb(182, 74, 128));
+}
