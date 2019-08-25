@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TODO list</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<!-- input, user wpisuje dane, pobieramy value w js, tworzymy p w html dom i wypisujemy value -->
+<body>
+    <h1>to do list</h1>
+    <form id="todo-form">
+        <input id="todo-input" type="text" placeholder="write what you want to do">
+        <input type="Submit" value="ADD TEXT" id="add-text">
+        <button id="clear-btn">CLEAR</button>
+    </form>
+    <ol id="todo-list"></ol>
+    <script src="main.js"></script>
+</body>
+</html>
