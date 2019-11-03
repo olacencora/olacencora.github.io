@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>form</title>
+    <link href="https://fonts.googleapis.com/css?family=Staatliches&display=swap&subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Yantramanav:400,500&display=swap&subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="form-validate-layout-1-style.css">
+</head>
+<body>
+        <div class="wrapper">
+                <!-- page 1 -->
+                <div class="first-page" style="display: inline">
+                    <header class="top-bar">
+                            <p class="instruction-top">krok 1/2</p>
+                        <div class="top-bar-text">
+                            <h1 class="first-page-title title">WYPEŁNIJ FORMULARZ</h1>
+                            <p class="instruction">wszystkie pola są obowiązkowe</p>
+                        </div>  
+                    </header>
+                    <div class="page-container">
+                        <!-- question 1  -->
+                        <label 
+                            for="form-question-1" 
+                            class="label-question-1 label-question">
+                            1. Jaka forma spędzania czasu w górach jest Twoja ulubioną?</label>
+                        <input 
+                            type="text" 
+                            id="form-question-1" 
+                            class="input-question-1 input-answer" 
+                            placeholder="trekking / wspinaczka / narty / snowboard / rower ..." 
+                            name="question-1" 
+                            tabindex="1">
+                        <p class="error"></p>
+                        <!-- question 2  -->
+                        <label 
+                            for="form-question-2" 
+                            class="label-question-2 label-question">
+                            2. Jak często wyjeżdzasz w góry?</label>
+                        <input 
+                            type="text" 
+                            id="form-question-2" 
+                            class="input-question-2 input-answer" 
+                            placeholder="raz w roku / raz na 3 miesiące ..."
+                            name="question-2" 
+                            tabindex="2">
+                       <p class="error"></p>
+                        <!-- question 3  -->
+                        <label 
+                            for="form-question-3" 
+                            class="label-question-3 label-question">
+                            3. Kiedy wyjeżdzasz w góry?</label>
+                        <input 
+                            type="text" 
+                            id="form-question-3" 
+                            class="input-question-3 input-answer" 
+                            placeholder="w ciągu tygodnia / w weekendy / w wakacje lub ferie"
+                            name="question-3" 
+                            tabindex="3">
+                        <p class="error"></p>
+                        <!-- question 4  -->
+                        <label 
+                            for="form-question-4" 
+                            class="label-question-4 label-question">
+                            4. W jakim celu wyjeżdzasz w góry?</label>
+                        <input 
+                            type="text" 
+                            id="form-question-4" 
+                            class="input-question-4 input-answer"
+                            placeholder="rekreacyjnie / zawodowo / rehabilitacyjnie ..." 
+                            name="question-4" 
+                            tabindex="4">
+                        <p class="error"></p>
+                        <!-- question 5  -->
+                        <label 
+                            for="form-question-5" 
+                            class="label-question-5 label-question">
+                            5. Jaki rodzaj szlaku preferujesz?</label>
+                            <input 
+                            type="text" 
+                            id="form-question-5" 
+                            class="input-question-5 input-answer"
+                            placeholder="dla początkujących / dla zawodowców" 
+                            name="question-5" 
+                            tabindex="5">
+                        <p class="error"></p>
+                        <!-- question 6  -->
+                        <label 
+                            for="form-question-6" 
+                            class="label-question-6 label-question">
+                            6. Jakiej długości trasy wybierasz?</label>
+                        <input 
+                            type="text" 
+                            id="form-question-6" 
+                            class="input-question-6 input-answer"
+                            placeholder="3h / 5h / 8h ..." 
+                            name="question-6" 
+                            tabindex="6">
+                        <p class="error"></p>
+                        <!-- question 7  -->
+                        <label 
+                            for="form-question-7" 
+                            class="label-question-7 label-question">
+                            7. Czy wyjeżdzasz w góry sam/sama?</label>
+                        <input 
+                            type="text" 
+                            id="form-question-7" 
+                            class="input-question-7 input-answer" 
+                            placeholder="TAK / NIE"
+                            name="question-7" 
+                            tabindex="7"
+        
+                            onclick="isDisable()">
+                        <p class="error"></p>
+                        <!-- question 8  -->
+                        <label 
+                            for="form-question-8" 
+                            class="label-question-8 label-question">
+                            8. Z kim wyjeżdzasz w góry?</label>
+                        <input type="text" 
+                            id="form-question-8" 
+                            class="input-question-8 input-answer"
+                            placeholder="z rodziną / ze znajomymi ..." 
+                            name="question-8" 
+                            tabindex="8"
+                            disabled="disabled">
+                        <p class="error"></p>
+                        <!-- question 9  -->
+                        <label 
+                            for="form-question-9" 
+                            class="label-question-9 label-question">
+                            9. Jak określasz siebie jako turysta? </label>
+                        <input 
+                            type="text" 
+                            id="form-question-9" 
+                            class="input-question-9 input-answer" 
+                            placeholder="początkujący / przeciętny / specjalista ..."
+                            name="question-9" 
+                            tabindex="9">
+                        <p class="error"></p>
+                        <!-- question 10  -->
+                        <label 
+                            for="form-question-10" 
+                            class="label-question-10 label-question">
+                            10. Czy uważasz, że turystyka górska jest przeznaczona dla każdego? </label>
+                        <input 
+                            type="text" 
+                            id="form-question-10" 
+                            class="input-question-10 input-answer"
+                            placeholder="TAK / NIE" 
+                            name="question-10" 
+                            tabindex="10">
+                        <p class="error"></p>
+                    </div>
+                    <footer class="bottom-bar">
+                        <!-- button  -->
+                        <button class="btn-next" id="buttonNext" tabindex="21">przejdź dalej</button>
+                    </footer>
+                </div>
+        
+                <!-- page 2  -->
+                <div class="second-page page" style="display: none;">
+                    <header class="top-bar">
+                            <div class="first-page" style="display: inline">
+                                <header class="top-bar">
+                                        <p class="instruction-top">krok 2/2</p>
+                                    <div class="top-bar-text">
+                                        <h1 class="first-page-title title">WYPEŁNIJ FORMULARZ</h1>
+                                        <p class="instruction">wszystkie pola są obowiązkowe</p>
+                                    </div>  
+                    </header>
+                    <div class="page-container">
+                        <!-- question 1  -->
+                        <span for="form-question-1" class="label-question-1 label-question">
+                            1. Jaka forma spędzania czasu w górach jest Twoja ulubioną?</span>
+                        <p class="input-question-end-1 input-answer-end">przykladowy text</p>
+                        <!-- question 2  -->
+                        <span for="form-question-2" class="label-question-2 label-question">
+                            2. Jak często wyjeżdzasz w góry?</span>
+                        <p class="input-question-end-2 input-answer-end">przykladowy text</p>
+                        <!-- question 3  -->
+                        <span for="form-question-3" class="label-question-3 label-question">
+                            3. Kiedy wyjeżdzasz w góry?</span>
+                        <p class="input-question-end-3 input-answer-end">przykladowy text</p>
+                        <!-- question 4  -->
+                        <span for="form-question-4" class="label-question-4 label-question">
+                            4. W jakim celu wyjeżdzasz w góry?</span>
+                        <p class="input-question-end-4 input-answer-end">przykladowy text</p>
+                        <!-- question 5  -->
+                        <span for="form-question-5" class="label-question-5 label-question">
+                            5. Jaki rodzaj szlaku preferujesz?</span>
+                        <p class="input-question-end-5 input-answer-end">przykladowy text</p>
+                        <!-- question 6  -->
+                        <span for="form-question-6" class="label-question-6 label-question">
+                            6. Jakiej długości trasy wybierasz?</span>
+                        <p class="input-question-end-6 input-answer-end">przykladowy text</p>
+                        <!-- question 7  -->
+                        <span for="form-question-7" class="label-question-7 label-question">
+                            7. Czy wyjeżdzasz w góry sam/sama?</span>
+                        <p class="input-question-end-7 input-answer-end">przykladowy text</p>
+                        <!-- question 8  -->
+                        <span for="form-question-8" class="label-question-8 label-question">
+                            8. Z kim wyjeżdzasz w góry?</span>
+                        <p class="input-question-end-8 input-answer-end">przykladowy text</p>
+                        <!-- question 9  -->
+                        <span for="form-question-9" class="label-question-9 label-question">
+                            9. Jak określasz siebie jako turysta? </span>
+                        <p class="input-question-end-9 input-answer-end">przykladowy text</p>
+                        <!-- question 10  -->
+                        <span for="form-question-10" class="label-question-10 label-question">
+                            10. Czy uważasz, że turystyka górska jest przeznaczona dla każdego? </span>
+                        <p class="input-question-end-10 input-answer-end">przykladowy text</p>
+                        <!-- question 11  -->
+                        <span for="form-question-11" class="label-question-11 label-question">  
+                    </div>
+                    <footer class="bottom-bar">
+                        <!-- button  -->
+                        <button class="btn-previous" id="buttonPrevious">cofnij</button>
+                            <input class="form-submit-btn" type="submit" name="form-submit" id="form-submit"
+                                value="wyślij">
+                    </footer>
+                </div>
+            </div>
+            <script src="form-validate-layout-1-js.js"></script>
+</body>
+</html>

@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+}
+
+.wrapper {
+  background-color: rgb(90, 101, 97);
+  color: rgb(240, 240, 240);
+  min-width: 280px;
+  max-width: 1100px;
+  min-height: 1000px;
+  font-family: "Yantramanav", sans-serif;
+  /* half 1500px  */
+  margin: 0 auto;
+}
+
+.top-bar {
+  height: 250px;
+  display: flex;
+  flex-direction: row;
+  justify-items: flex-end;
+  justify-content: space-between;
+  padding: 20px 35px;
+  background-image: url(david-marcu-78A265wPiO4-unsplash.jpg);
+  background-size: 100%;
+  background-position: right 75%;
+  background-repeat: no-repeat;
+  padding-bottom: 15px;
+  font-family: "Staatliches", cursive;
+}
+
+.page-container {
+  padding: 20px 35px;
+}
+
+.instruction-top {
+  align-self: flex-start;
+  font-size: 15px;
+}
+
+.title {
+  margin: 10px 5px 10px;
+  font-size: 40px;
+  text-align: right;
+}
+
+.instruction {
+  font-size: 12px;
+  text-align: right;
+}
+
+.label-question {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.input-answer,
+.input-answer-end {
+  background-color: #d1cfcf;
+  border-radius: 5px;
+  height: 30px;
+  min-width: 150px;
+  width: 95%;
+  color: #000;
+  margin: 4px 20px 10px;
+  padding: 3px 10px;
+  font-size: 16px;
+}
+
+.bottom-bar {
+  background-color: rgb(64, 68, 66);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding-right: 5%;
+}
+
+.input-answer::placeholder {
+  font-family: "Yantramanav", sans-serif;
+  color: rgb(71, 71, 71);
+  font-size: 16px;
+}
+
+.btn-next,
+.form-submit-btn,
+.btn-previous {
+  background-color: #d1cfcf;
+  color: rgb(64, 68, 66);
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 10px 15px;
+  max-width: 150px;
+  font-family: "Open Sans", sans-serif;
+  margin: 20px 10px 20px 20px;
+  align-self: flex-end;
+  cursor: pointer;
+}
+
+.btn-next:hover,
+.form-submit-btn:hover,
+.btn-previous:hover {
+  background-color: #b1b1b1;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+}
+
+@media only screen and (max-width: 450px) {
+  .page-container {
+    padding: 20px 25px;
+  }
+
+  .top-bar {
+    height: 200px;
+    background-image: url(david-marcu-78A265wPiO4-unsplash.jpg);
+    background-size: cover;
+  }
+
+  .instruction-top {
+    font-size: 13px;
+  }
+  .instruction {
+    font-size: 10px;
+    margin-bottom: 13px;
+  }
+  .title {
+    margin: 16px 0;
+    font-size: 18px;
+  }
+  .label-question {
+    font-size: 14px;
+    margin: 12px 0;
+  }
+
+  .error {
+    font-size: 12px;
+  }
+
+  .input-answer,
+  .input-answer-end {
+    font-size: 14px;
+    margin: 3 20px;
+  }
+
+  .warning {
+    border-bottom: 1px solid rgb(212, 57, 57);
+    font-size: 14px;
+    margin: 0 20px;
+  }
+
+  .buttons-section {
+    justify-content: center;
+  }
+
+  .btn-next {
+    margin: 30px 10px 20px 10px;
+    align-self: center;
+  }
+
+  .form-submit-btn,
+  .btn-previous {
+    margin: 30px 10px 20px 10px;
+  }
+}
