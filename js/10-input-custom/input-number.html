@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>input</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap&subset=latin-ext"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="input-number-style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1 class="title">pick number</h1>
+      <input
+        type="text"
+        class="input-name"
+        id="required-name"
+        required
+        placeholder="name"
+      />
+      <span class="help-text-1"></span>
+      <input
+        type="number"
+        min="35"
+        max="42"
+        step="0.5"
+        value="35"
+        id="out-of-range-input"
+        class="input-number"
+      />
+      <span class="help-text-2">- value must be between 35 and 42</span>
+      <input type="text" class="button" value="confirm" />
+      
+    <script src="input-number-js.js"></script>
+  </body>
+</html>

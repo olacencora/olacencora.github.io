@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+}
+
+.wrapper {
+  background-color: rgb(74, 117, 101);
+  color: #000;
+  min-width: 280px;
+  max-width: 400px;
+  min-height: 400px;
+  font-family: "Montserrat", sans-serif;
+  margin: 100px auto;
+  padding: 30px 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  margin-bottom: 20px;
+}
+
+.input-name,
+.input-number,
+.button {
+  background-color: rgb(130, 170, 155);
+  min-height: 25px;
+  padding: 5px 15px;
+  margin: 10px 0 5px 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  border-radius: 15px;
+  border: 2px solid rgb(40, 92, 73);
+}
+
+.button {
+  cursor: pointer;
+  margin: 20px 0;
+  border: none;
+}
+
+.input-name:required + .help-text-1::before {
+  content: "*required";
+}
+
+.input-number:out-of-range + .help-text-2::before {
+  content: "*out of range ";
+}
+
+@media only screen and (max-width: 450px) {
+  .page-container {
+    padding: 20px 25px;
+  }
+}
