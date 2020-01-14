@@ -1,0 +1,20 @@
+.container {
+  background-color: grey;
+  display: grid;
+  grid-template-columns: 100px 100px auto 100px 100px;
+  grid-template-rows: 33.33vh 33.33vh 33.33vh;
+  grid-template-areas:
+    "header header header header header"
+    "main main main aside aside"
+    "footer footer footer footer footer";
+}
+.item-1 {
+  background-color: #e6e648;
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 2;
+}
+.item-2 {
+  background-color: rgb(27, 146, 80);
+  grid-area: header;
+}
