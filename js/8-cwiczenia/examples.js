@@ -22,36 +22,46 @@ var shirtSleeve = 8.71;
 if (
   shirtWidth >= 18 &&
   shirtWidth < 20 &&
-  shirtLength >= 28 && shirtLength < 29 &&
-  shirtSleeve >= 8.13 && shirtSleeve < 8.38
+  shirtLength >= 28 &&
+  shirtLength < 29 &&
+  shirtSleeve >= 8.13 &&
+  shirtSleeve < 8.38
 ) {
   console.log("S");
 } else if (
   shirtWidth >= 20 &&
   shirtWidth < 22 &&
-  shirtLength >= 29 && shirtLength < 30 &&
-  shirtSleeve >= 8.38 && shirtSleeve < 8.63
+  shirtLength >= 29 &&
+  shirtLength < 30 &&
+  shirtSleeve >= 8.38 &&
+  shirtSleeve < 8.63
 ) {
   console.log("M");
 } else if (
   shirtWidth >= 22 &&
   shirtWidth < 30 &&
-  shirtLength >= 30 && shirtLength < 31 &&
-  shirtSleeve >= 8.63 && shirtSleeve < 8.88
+  shirtLength >= 30 &&
+  shirtLength < 31 &&
+  shirtSleeve >= 8.63 &&
+  shirtSleeve < 8.88
 ) {
   console.log("L");
 } else if (
   shirtWidth >= 24 &&
   shirtWidth < 31 &&
-  shirtLength >= 31 && shirtLength < 33 &&
-  shirtSleeve >= 8.88 && shirtSleeve < 9.63
+  shirtLength >= 31 &&
+  shirtLength < 33 &&
+  shirtSleeve >= 8.88 &&
+  shirtSleeve < 9.63
 ) {
   console.log("XL");
 } else if (
   shirtWidth >= 26 &&
   shirtWidth < 28 &&
-  shirtLength >= 33 && shirtLength < 34 &&
-  shirtSleeve >= 9.63 && shirtSleeve < 10.13
+  shirtLength >= 33 &&
+  shirtLength < 34 &&
+  shirtSleeve >= 9.63 &&
+  shirtSleeve < 10.13
 ) {
   console.log("2XL");
 } else if (shirtWidth === 28 && shirtLength === 34 && shirtSleeve === 10.13) {
@@ -59,9 +69,6 @@ if (
 } else {
   console.log("N/A");
 }
-
-
-
 
 // Write a while loop that:
 
@@ -73,19 +80,54 @@ if (
 
 var x = 1;
 
-while (x<=100) {
-  if(x%15===0){
-    console.log('JuliaJames');
-  }
-  else if(x%3===0){
-    console.log('Julia');
-  }
-  else if(x%5===0){
-    console.log('James');
-  }
-  else{
+while (x <= 100) {
+  if (x % 15 === 0) {
+    console.log("JuliaJames");
+  } else if (x % 3 === 0) {
+    console.log("Julia");
+  } else if (x % 5 === 0) {
+    console.log("James");
+  } else {
     console.log(x);
   }
 
-  x=x+1;// increment x
+  x = x + 1; // increment x
 }
+
+/*
+ * Use the .map() method to take the bills array below and create a second array
+ * of numbers called totals. The totals array should contains each amount from the
+ * bills array but with a 15% tip added. Log the totals array to the console.
+ *
+ * For example, the first two entries in the totals array would be:
+ *
+ * [57.76, 21.99, ... ]
+ *
+ * Things to note:
+ *  - each entry in the totals array must be a number
+ *  - each number must have an accuracy of two decimal points
+ */
+
+var bills = [
+  50.23,
+  19.12,
+  34.01,
+  100.11,
+  12.15,
+  9.9,
+  29.11,
+  12.99,
+  10.0,
+  99.22,
+  102.2,
+  100.1,
+  6.77,
+  2.22
+];
+var totals = bills.map(function(x) {
+  x = x * 1.15;
+  x = x.toFixed(2); //Return string
+  x = Number(x); //Return number
+  return x;
+});
+console.log(totals);
